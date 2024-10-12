@@ -1,0 +1,46 @@
+/* styles/footer.module.css */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: left;
+  }
+  
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .subscribe, .contact, .social {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .subscribe h4, .contact h4, .social h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .subscribe input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+  }
+  
+  .subscribe button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .subscribe button:hover {
+    background-color: #ddd;
+  }
+  
+  .contact p, .social p {
+    color: #ccc;
+    margin: 5px 0;
+  }
+  

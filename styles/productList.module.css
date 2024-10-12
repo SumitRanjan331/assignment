@@ -1,0 +1,147 @@
+/* Product list container */
+.container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.filterSidebar {
+  width: 250px;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+
+.productSection {
+  flex: 1;
+}
+
+.disc {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+.lorem {
+  text-align: center;
+  color: #555;
+  font-size: 1rem;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.productCard {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  padding: 20px;
+  text-align: center;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.productCard img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.productCard h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.productCard p {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Filters styling */
+.filterSection label {
+  display: block;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.filterSection input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer h3, .footer p {
+  color: #fff;
+}
+
+.footer input {
+  width: 200px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.footer button {
+  padding: 10px 20px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.footer .social-icons img {
+  width: 24px;
+  margin-right: 10px;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .filterSidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .productGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .productGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

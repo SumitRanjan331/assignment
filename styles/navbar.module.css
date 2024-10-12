@@ -1,0 +1,48 @@
+/* Navbar container */
+.navbar {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .navContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Logo section */
+  .logoContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logoImage {
+    height: 30px;
+    width: 30px;
+  }
+  
+  /* Centered Logo Text */
+  .logoText {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  /* Icons section */
+  .navIcons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
